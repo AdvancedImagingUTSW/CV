@@ -2,3 +2,6 @@
 cv.log
 cv.synctex.gz
 cv.aux
+.DS_Store
+*.gz
+*.log

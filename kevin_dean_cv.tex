@@ -1,0 +1,74 @@
+\documentclass[10pt]{res} 
+\usepackage{fontspec}
+\usepackage{enumitem}
+\usepackage{etaremune}
+\usepackage{array}
+
+\newsectionwidth{0pt} 
+\setlength{\parindent}{0pt}
+
+% Custom commands
+\newcommand{\forceindent}{\leavevmode{\parindent=2em\indent}}
+\newcommand{\groupedSection}[2]{\vspace{0.00in}\section{\centerline{#1}}#2}
+\newcommand{\customsubsection}[1]{\vspace{0.05in}\textbf{#1}\vspace{-0.1in}\par}
+\newcommand{\secondsubsection}[1]{ \vspace{0.05in}\textbf{#1}\vspace{0.1in}\par}
+\newcommand{\finalsection}[1]{\vspace{0.05in}\textbf{#1}\par}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+
+
+\begin{document}
+\name{Kevin M. Dean, Ph.D.} 
+\address{{\bf Work Address}  \\ 6000 Harry Hines Blvd.  NL5.116A  \\ Dallas, TX 75390 \\ kevin.dean@utsouthwestern.edu} 
+\address{{\bf Permanent Address} \\ 4420 Hollow Oak Dr. \\ Dallas, TX 75287 \\ (303) 681-8863} 
+
+\begin{resume}
+  \groupedSection{VISION}{\input{files/vision}}
+  \groupedSection{EDUCATION}{\input{files/education}}
+  \groupedSection{PROFESSIONAL ACCOMPLISHMENTS}{\input{files/accomplishments}}
+  
+\groupedSection{RESEARCH \& WORK ACTIVITIES}{
+\customsubsection{Professional Positions} \input{files/work} \par
+\secondsubsection{Patents \& Patents Pending} \input{files/patents} \par
+%\finalsection{Other Training} \input{files/other_training} 
+}
+  
+\groupedSection{PUBLICATIONS}{
+\secondsubsection{Peer-Reviewed Publications} \input{files/publications_nih} \par
+\finalsection{Conference Papers} \input{files/conference_papers}
+}
+  
+\groupedSection{PRESENTATIONS}{
+\secondsubsection{Invited Talks} \input{files/invited_talks}
+\finalsection{Contributed Talks} \input{files/other_talks}
+}
+  
+\groupedSection{GRANTS \& FUNDING}{
+\secondsubsection{Current Grant Support} \input{files/grants}
+\secondsubsection{Previous Grant Support} \input{files/grants_previous}
+\finalsection{Trainee Grant Support} \input{files/trainee_grants}
+}
+  
+\groupedSection{SERVICE \& LEADERSHIP}{
+\customsubsection{Leadership Positions} \input{files/leadership}
+\customsubsection{Institutional Committees} \input{files/institutional_committtees}
+\customsubsection{Conference Organizing} \input{files/conference_organizing}
+\customsubsection{Advisory Panels} \input{files/advisory_panels}
+\finalsection{Philanthropy \& Community Service} \input{files/philanthropy}
+}
+
+  \groupedSection{TEACHING \& MENTORSHIP}{
+    \customsubsection{Teaching Experience} \input{files/teaching_experience}
+    \customsubsection{Scientific Mentorship} \input{files/scientific_mentorship}
+    \finalsection{Dissertation Committees} \input{files/dissertation_committees}
+  }
+  
+  \groupedSection{PROFESSIONAL ENGAGEMENT}{
+    \customsubsection{Study Sections} \input{files/study_sections}
+    \secondsubsection{Editorial Boards} \input{files/editor}
+    \secondsubsection{Referee for Journals} \input{files/referee}
+    \finalsection{Professional Memberships} \input{files/memberships}
+  }
+  
+  \groupedSection{DISTINCTIONS}{\input{files/distinctions}}
+\end{resume}
+\end{document}
